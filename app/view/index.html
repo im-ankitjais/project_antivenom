@@ -1,0 +1,58 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link rel='stylesheet' href='../static/style.css'>
+  
+  
+</head>
+<body>
+  <div style="display: flex;"> 
+    <img class="gr_img" src="../image/top_right_curve.png" alt="">
+  </div>
+<div>
+  <div class='center'>
+    <div class='title'>Classify Snake Images 🐍</div>
+    <div class='title'>Know they are venomous or not.</div> 
+    
+    <p> Project AntiVenom is an innovative idea of bringing  technology in to the aid of human problems.<br/> 
+      Currently, region specific for the Indian state of Odisha, this project aims at improving the disastrous
+       situation between humans and snakes.
+      </p>
+     <p>Call snake resurer on: <a id="tell" href="tel:2125551212">2125551212</a></p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
+      <p class="pa">Developed by - Team Xiken</p>
+  </div>
+  <div style="display: flex;"> 
+    <img class="gr_img2" src="../image/top_blue_curve.png" alt="">
+  </div>
+  
+  <script type="text/javascript" src='../static/client.js'></script>
+</body>
+</html>
